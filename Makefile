@@ -1,6 +1,6 @@
 INSTALL = /usr/bin/install -c
 INSTALLDATA = /usr/bin/install -c -m 644
-PROGNAME = vim-modepedal
+PROGNAME = footswitcher
 CFLAGS = -Wall
 UNAME := $(shell uname)
 ifeq ($(UNAME), Darwin)
