@@ -1,6 +1,6 @@
 
 # footswitcher
-With footswitcher you use a [cheap USB pedal](http://www.pcsensor.com/one-switch-pedal.html) to switch easily between "insert mode" and "escape mode" in [Vim](https://www.vim.org/). In fact, you can switch between any kind of keys to be pressed.
+With footswitcher you use a [cheap USB pedal](http://www.pcsensor.com/one-switch-pedal.html) to switch easily between "insert mode" and "escape mode" in [Vim](https://www.vim.org/). In fact, you can switch between any sequence of keys to be pressed.
 
 There exist already [hardware hacks](https://github.com/alevchuk/vim-clutch) for using this kind of USB pedal to switch Vim modes. footswitcher works without any hardware modification and also with more than two words to switch between.
 
