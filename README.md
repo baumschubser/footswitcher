@@ -1,18 +1,15 @@
 
 # footswitcher
-With footswitcher you use a cheap USB pedal to switch easily between "insert mode" and "escape mode" in [Vim](https://www.vim.org/). 
+With footswitcher you use a [cheap USB pedal](http://www.pcsensor.com/one-switch-pedal.html) to switch easily between "insert mode" and "escape mode" in [Vim](https://www.vim.org/). In fact, you can switch between any kind of keys to be pressed.
 
-Not only that, but you can define any series of key presses and cycle through it! The first press triggers key "a", the second "bcd", the third "e", the fourth "a" again and so on.
-
-There exist already [hardware hacks](https://github.com/alevchuk/vim-clutch) for using this kind of USB pedal to switch Vim modes. footswitcher works without any hardware modification and also with more than two segments to cycle through.
-
+There exist already [hardware hacks](https://github.com/alevchuk/vim-clutch) for using this kind of USB pedal to switch Vim modes. footswitcher works without any hardware modification and also with more than two words to switch between.
 
 ## Configuration
 To configure the series of key presses that you want to use, please use [footswitch](https://github.com/rgerganov/footswitch). You define a series of key presses (by its [hex values](http://www.freebsddiary.org/APC/usb_hid_usages.php)), separated by "FF".
 
 ### For switching vim modes
     footswitch -S '29 0C FF 29'
-Here the first press triggers the keys Escape and "i" (hex values 29 and 0c). The second pedal press triggers "i". The third press would trigger Escape and "i" again.
+Here the first press triggers the keys Escape and "i" (hex values 29 and 0c). The second pedal press triggers Escape. The third press would trigger Escape and "i" again.
 
 ### Hello world
     footswitch -S '0B 08 0F 0F 12 FF 2C FF 1A 12 15 0F 07'
